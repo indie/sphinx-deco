@@ -9,7 +9,7 @@ Sometimes you'd like for documentation rendered within a Sphinx framework to "ma
 the rest of your site theme.  Because all HTML pertinent to Sphinx-generated docs ultimately comes from .rst files, traditional coding of HTML source, CSS and JS to render HTML
 doesn't work quite the same. 
 
-This handy guide to help content authors, editors and web designers work together. Time spent developing and contributing to this guide has the potential to significantly reduce lag in release cycles when efforts are coordinated.
+This handy guide was created to help content authors, editors and web designers work together. Time spent developing and contributing to this guide has the potential to significantly reduce lag in release cycles when efforts are coordinated.
 
 
 
