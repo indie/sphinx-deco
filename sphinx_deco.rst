@@ -170,31 +170,15 @@ TABLES								+--------------------+----------------------+-------------+
 ######								|  Heading 1	     | Heading 2	    | Data	  |
 								+====================+======================+=============+
 								|  Info		     | Info 2		    | Datum	  |
-<table="icky inline html css bad">				+--------------------+----------------------+-------------+
- <thead>
+<table>								+--------------------+----------------------+-------------+
+  <tr> 								
+   <th>Heading 1</th>								
+   <th>Heading 2</th>							
+   <th>Data</th>						
+  </tr>									
   <tr>
-   <th>Heading 1</th>
-   <th>Heading 2</th>
-   <th>Data</th>
+   <td> Info </td>
+   <td> Info 2 </td>
+   <td> Datum </td>
   </tr>
-  <tr>
-  <td> Info </td>
-  <td> Info 2 </td>
-  <td> Datum </td>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>Hard</td>
-   <td>0.45 ultimate</td>
-   <td>56.2</td>
-   <td>80,000</td>
-   <td>15</td>
-   <td>20</td>
-  </tr>
-
-<
-
-
-
-
+ </table>
