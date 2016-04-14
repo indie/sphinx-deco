@@ -1,15 +1,17 @@
 Sphinx Deco
-===========
-
+###########
 
 Overview
---------
+========
 
 Sometimes you'd like for documentation rendered within a Sphinx framework to "match"
-the rest of your site theme.  Because all HTML pertinent to Sphinx-generated docs ultimately comes from .rst files, traditional coding of HTML source, CSS and JS to render HTML
+the rest of your site theme.  Because all HTML pertinent to Sphinx-generated docs ultimately
+comes from .rst files, traditional coding of HTML source, CSS and JS to render HTML
 doesn't work quite the same. 
 
-This handy guide was created to help content authors, editors and web designers work together. Time spent developing and contributing to this guide has the potential to significantly reduce lag in release cycles when efforts are coordinated.
+This handy guide was created to help content authors, editors and web designers work together. 
+Time spent developing and contributing to this guide has the potential to significantly reduce lag
+in release cycles, especially when efforts are coordinated.
 
 
 
@@ -52,17 +54,23 @@ They are followed by their respective :literal:`.rst` definitions.
 	<sub>Subscript</sub>					:sub:`Subscript`\
 
 	---------------------------				---------------------------------
-	<a link="#anchorref">					.._anchorref: /*internal to doc or project*/
+	<a link="#anchorref">					`anchorref`
+	
+	a:link { text-decoration: underline;
+	         color: #666333; 				.._anchorref: /*internal to doc or project*/
 								.._anchorref text Link:
 	---------------------------				--------------------------------- 			
 	<a href="http://intel.com">Intel</a>			.._externallink: http://intel.com
 	
 	
 	---------------------------				--------------------------------- 			
-	Various							.. [1] footnote_1
+	Various	Footnotes										
+	~~~~~~~~~~~~~~~~~
 	
+								.. [1] footnote_1
+	<sup> 1up </sup>
 								Text point to footnote_1 [1]_
-	
+	<sub> 1down </sub>
 	---------------------------				--------------------------------- 			
 	<div id="admonition" title="">				.. admonition:: title
 	 #admonition {
@@ -105,7 +113,7 @@ They are followed by their respective :literal:`.rst` definitions.
 	}
 
 	---------------------------				--------------------------------- 			
-
+	#COMMENTS
 	<!-- This is a source-readable
 	HTML comment. -->					.. This is a source-readable ReST comment.
 
@@ -128,20 +136,22 @@ They are followed by their respective :literal:`.rst` definitions.
 	<code>							.. codeblock::
 								   :name: block target name	
 
-	# test a 'Hello world' code block in Prolog		.. codeblock:: prolog
+	# test a 'Hello world' code block in Prolog		.. code-block:: prolog
   	main :- write('Hello, world!'), nl.			    main :- write('Hello, world!'), nl.			  
 
-  	# test a 'Hello, world' code block in Python 3		.. codeblock:: python
+  	# test a 'Hello, world' code block in Python 3		.. code-block:: python
 	print ("Hello, world")					   print ("Hello, world") 		
 										
-	# test a 'Hello, world' code block in Ruby		.. codeblock:: ruby
+	# test a 'Hello, world' code block in Ruby		.. code-block:: ruby
   	puts "Hello, world"					   puts "Hello, world"		
 	</code>
 	---------------------------				--------------------------------- 			
 	Raw and literals					Raw and literals
 	++++++++++++++++					++++++++++++++++
 
-	<pre> plain txt </pre>					.. raw:: plain txt
+	<pre> plain txt </pre>					.. raw:: 
+	
+								   plain txt
 	
 	---------------------------				--------------------------------- 					
 	<pre>							Preface to a literal code block::
@@ -150,4 +160,41 @@ They are followed by their respective :literal:`.rst` definitions.
 	  </code>
 	</pre>  
 	
+								OR
+								
+								::
+	
+
 	===========================				=================================
+TABLES								+--------------------+----------------------+-------------+
+######								|  Heading 1	     | Heading 2	    | Data	  |
+								+====================+======================+=============+
+								|  Info		     | Info 2		    | Datum	  |
+<table="icky inline html css bad">				+--------------------+----------------------+-------------+
+ <thead>
+  <tr>
+   <th>Heading 1</th>
+   <th>Heading 2</th>
+   <th>Data</th>
+  </tr>
+  <tr>
+  <td> Info </td>
+  <td> Info 2 </td>
+  <td> Datum </td>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>Hard</td>
+   <td>0.45 ultimate</td>
+   <td>56.2</td>
+   <td>80,000</td>
+   <td>15</td>
+   <td>20</td>
+  </tr>
+
+<
+
+
+
+
