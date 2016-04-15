@@ -144,34 +144,35 @@ They are followed by their respective :literal:`.rst` definitions.
 	# test a 'Hello, world' code block in Ruby		.. code-block:: ruby
   	puts "Hello, world"					   			puts "Hello, world"		
 	</code>
-	---------------------------					--------------------------------- 			
-	Raw and literals							Raw and literals
-	++++++++++++++++							++++++++++++++++
+	---------------------------			  			--------------------------------- 			
+	Raw and literals								Raw and literals
+	++++++++++++++++								++++++++++++++++
 
-	<pre> plain txt </pre>						.. raw:: 
+	<pre> plain txt </pre>							.. raw:: 
 	
-								   				plain txt
+								   					plain txt
 	
-	---------------------------					--------------------------------- 					
-	<pre>										Preface to a literal code block::
+	---------------------------						--------------------------------- 					
+	<pre>											Preface to a literal code block::
 	  <code>						
 		Literal code block-level					Literal code block
 	  </code>
 	</pre>  
 	
-												OR
+													OR
 								
-												::
+													::
 	
-
-	---------------------------					--------------------------------- 					
-
-	TABLES										+--------------------+----------------------+-------------+
-    ++++++										|  Heading 1	     | Heading 2		    | 	Data	  |
+::
+	
+	TABLES										
+    ++++++	
+    											+--------------------+----------------------+-------------+
+    											|  Heading 1	     | Heading 2		    | 	Data	  |
 												+====================+======================+=============+
 												|  Info			     | Info 2			    | Datum		  |
 	<table>										+--------------------+----------------------+-------------+
-  		<tr> 						
+  	 <tr> 						
 	   <th>Heading 1</th>								
 	   <th>Heading 2</th>							
 	   <th>Data</th>						
