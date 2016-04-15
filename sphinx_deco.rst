@@ -23,56 +23,55 @@ They are followed by their respective :literal:`.rst` definitions.
 
 ::
 
-	===========================				=================================
-	HTML5 + CSS						ReST with directives
-	===========================				=================================							
-	<container class="classname">	  			.. container:: [container classname]
-	---------------------------				---------------------------------
-	<img src="img.png">					..img:: img.png
+	===========================						=================================
+	HTML5 + CSS3									ReST with directives
+	===========================						=================================							
+	<container class="classname">					.. container:: [container classname]
+	---------------------------						---------------------------------
+	<img src="img.png">								..img:: img.png
 	.img {								
-		height: 80px;			  		:height: 80px
-		width: 30px;			  		:width:  30px
-		align: left;			  		:align:  left
-		target: target.ref;				:target: target.ref
+		height: 80px;			  					:height: 80px
+		width: 30px;			  					:width:  30px
+		align: left;			  					:align:  left
+		target: target.ref;							:target: target.ref
 	}					   									
-	---------------------------				---------------------------------
-	<strong>						*Bold Text*
-	---------------------------				---------------------------------
-	<em>							**Emphasized Italics Text**
-	---------------------------				---------------------------------
-	<ul>							* Bullet item A 
-	   <li>							* Bullet Item B
-	                              		  		  * Sub-bullet item A
-	                              		  		  * Sub-bullet item B
-	---------------------------				--------------------------------- 			
-	<ol>							#. Ordered bullet item 1
-	   <li>							#. Ordered bullet item 2
+	---------------------------						---------------------------------
+	<strong>										*Bold Text*
+	---------------------------						---------------------------------
+	<em>											**Emphasized Italics Text**
+	---------------------------						---------------------------------
+	<ul>											* Bullet item A 
+	   <li>											* Bullet Item B
+	                              		  		  		* Sub-bullet item A
+	                              		  		  		* Sub-bullet item B
+	---------------------------						--------------------------------- 			
+		<ol>										#. Ordered bullet item 1
+	   <li>											#. Ordered bullet item 2
   
-	---------------------------				--------------------------------- 			
-	<sup>Superscript</sup>					:sup:`Superscript`\
+	---------------------------						--------------------------------- 			
+	<sup>Superscript</sup>							:sup:`Superscript`\
 	
-	<sub>Subscript</sub>					:sub:`Subscript`\
+	<sub>Subscript</sub>							:sub:`Subscript`\
 
-	---------------------------				---------------------------------
-	<a link="#anchorref">					`anchorref`
+	---------------------------						---------------------------------
+	<a link="#anchorref">							`anchorref`
 	
 	a:link { text-decoration: underline;
-	         color: #666333; 				.._anchorref: /*internal to doc or project*/
-								.._anchorref text Link:
-	---------------------------				--------------------------------- 			
-	<a href="http://intel.com">Intel</a>			.._externallink: http://intel.com
+	         color: #666333; 						.._anchorref: /*internal to doc or project*/
+													.._anchorref text Link:
+	---------------------------						--------------------------------- 			
+	<a href="http://intel.com">
+	Intel</a>										.._externallink: http://intel.com
 	
 	
-	---------------------------				--------------------------------- 			
+	---------------------------						--------------------------------- 			
 	Various	Footnotes										
 	~~~~~~~~~~~~~~~~~
-	
-								.. [1] footnote_1
 	<sup> 1up </sup>
-								Text point to footnote_1 [1]_
-	<sub> 1down </sub>
-	---------------------------				--------------------------------- 			
-	<div id="admonition" title="">				.. admonition:: title
+													Text point to footnote_1 [1]_
+	<sub> 1down </sub>								.. [1] footnote_1
+	---------------------------						--------------------------------- 			
+	<div id="admonition" title="">					.. admonition:: title
 	 #admonition {
 	 /** block-level css **/
  	     background: red;
@@ -82,29 +81,29 @@ They are followed by their respective :literal:`.rst` definitions.
 		 text-shadow: 0.2 em;
 	 }
 
-	---------------------------				--------------------------------- 			
+	---------------------------						--------------------------------- 			
 
-	<div id="important"></div>				.. important::
+	<div id="important"></div>						.. important::
 	 #important {
-	  /** block-level css **/ 				   Skip a line and enter imporant content.
+	  /** block-level css **/ 						   Skip a line and enter imporant content.
 	  }				
 	
-	<div id="attention"></div>				.. attention::
+	<div id="attention"></div>						.. attention::
 	 #attention {
 	 /** block-level css **/
 	 }
 	 
-	<div id="note">						.. note::
-	<div id="notice">					.. notice::
-	<div id="hint">						.. hint::
-	<div id="warning">					.. warning::
-	...							...
+	<div id="note">									.. note::
+	<div id="notice">								.. notice::
+	<div id="hint">									.. hint::
+	<div id="warning">								.. warning::
+	...													...
 	
-	etc.							etc.
+	etc.											etc.
 
-	---------------------------				--------------------------------- 			
+	---------------------------						--------------------------------- 			
 
-	<div class="guilabel">					:guilabel:
+	<div class="guilabel">							:guilabel:
 	.guilabel {
 	/** class-level css **/
 	font-size: 1.3em;
@@ -112,73 +111,74 @@ They are followed by their respective :literal:`.rst` definitions.
 	background-color: #e0e0e0;
 	}
 
-	---------------------------				--------------------------------- 			
+	---------------------------						--------------------------------- 			
 	#COMMENTS
 	<!-- This is a source-readable
-	HTML comment. -->					.. This is a source-readable ReST comment.
+	HTML comment. -->								.. This is a source-readable ReST comment.
 
-	---------------------------				--------------------------------- 			
+	---------------------------						--------------------------------- 			
 	
-	<img src="FIGURE-1.png">				.. figure::
-	<div class="caption">caption text</div>			   :height: 133 px
-	img {margin-left: 10%;					   :caption: caption text	
+	<img src="FIGURE-1.png">						.. figure::
+	<div class="caption">caption</div>		  		 :height: 133 px
+	img {margin-left: 10%;					   		:caption: caption text	
 	      margin-top: 20px; } 					
 	.caption {font-size: 80%;
 		  text-align: left;
 		  font-weight: lighter; }
 
-	---------------------------				--------------------------------- 			
-	Annotate as raw code					Annotate as raw w/syntax highlighting
-	++++++++++++++++++++					+++++++++++++++++++++++++++++++++++++
+	---------------------------						--------------------------------- 			
+	Annotate as raw code							Annotate as raw w/syntax highlighting
+	++++++++++++++++++++							+++++++++++++++++++++++++++++++++++++
 	
 	<code class="inline">inline code</code>			``inline code``
 	
-	<code>							.. codeblock::
-								   :name: block target name	
+	<code>											.. codeblock::
+								   						:name: block target name	
 
 	# test a 'Hello world' code block in Prolog		.. code-block:: prolog
   	main :- write('Hello, world!'), nl.			    main :- write('Hello, world!'), nl.			  
 
-  	# test a 'Hello, world' code block in Python 3		.. code-block:: python
-	print ("Hello, world")					   print ("Hello, world") 		
+  	# test a 'Hello, world' code block in Python 3	.. code-block:: python
+	print ("Hello, world")					   		print ("Hello, world") 		
 										
 	# test a 'Hello, world' code block in Ruby		.. code-block:: ruby
-  	puts "Hello, world"					   puts "Hello, world"		
+  	puts "Hello, world"					   			puts "Hello, world"		
 	</code>
-	---------------------------				--------------------------------- 			
-	Raw and literals					Raw and literals
-	++++++++++++++++					++++++++++++++++
+	---------------------------					--------------------------------- 			
+	Raw and literals							Raw and literals
+	++++++++++++++++							++++++++++++++++
 
-	<pre> plain txt </pre>					.. raw:: 
+	<pre> plain txt </pre>						.. raw:: 
 	
-								   plain txt
+								   				plain txt
 	
-	---------------------------				--------------------------------- 					
-	<pre>							Preface to a literal code block::
+	---------------------------					--------------------------------- 					
+	<pre>										Preface to a literal code block::
 	  <code>						
-		Literal code block					Literal code block
+		Literal code block-level					Literal code block
 	  </code>
 	</pre>  
 	
-								OR
+												OR
 								
-								::
+												::
 	
 
-	===========================				=================================
-TABLES								+--------------------+----------------------+-------------+
-######								|  Heading 1	     | Heading 2	    | Data	  |
-								+====================+======================+=============+
-								|  Info		     | Info 2		    | Datum	  |
-<table>								+--------------------+----------------------+-------------+
-  <tr> 								
-   <th>Heading 1</th>								
-   <th>Heading 2</th>							
-   <th>Data</th>						
-  </tr>									
-  <tr>
-   <td> Info </td>
-   <td> Info 2 </td>
-   <td> Datum </td>
-  </tr>
- </table>
+	---------------------------					--------------------------------- 					
+
+	TABLES										+--------------------+----------------------+-------------+
+    ++++++										|  Heading 1	     | Heading 2		    | 	Data	  |
+												+====================+======================+=============+
+												|  Info			     | Info 2			    | Datum		  |
+	<table>										+--------------------+----------------------+-------------+
+  		<tr> 						
+	   <th>Heading 1</th>								
+	   <th>Heading 2</th>							
+	   <th>Data</th>						
+	  </tr>									
+	  <tr>
+	   <td> Info </td>
+	   <td> Info 2 </td>
+	   <td> Datum </td>
+	  </tr>
+	 </table>
